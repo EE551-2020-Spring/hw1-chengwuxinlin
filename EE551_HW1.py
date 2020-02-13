@@ -66,21 +66,22 @@ def dictionaries():
     # Increase the quantity of f by 1
     # IMPLEMENT IT HERE
     a["quantity"]=5
+    p=a["quantity"]
     # Create a nested dictionary where:
     #   name => {first_name => "Grace", last_name => "Hopper"} (a dictionary)
     #   jobs => ["scientist", "engineer"] (a list)
     #   age => 85
-    p = {"name":{"first_name":"Grace","last_name":"Hopper"},"jobs":{"scientist","engineer"},"age":"85"}
+    k = {"name":{"first_name":"Grace","last_name":"Hopper"},"jobs":{"scientist","engineer"},"age":"85"}
     # Add "programmer" to the list of jobs Grace has
     # IMPLEMENT IT HERE
-    p["jobs"]={"programmer","scientist","engineer"}
+    k["jobs"]={"programmer","scientist","engineer"}
     # Get the third job Grace has that you recently added
-    s=p["jobs"]
-    s = ";".join(p["jobs"])
+    s=k["jobs"]
+    s = ";".join(k["jobs"])
     s=s.split(";")
     s[1]
     # Use the sort() function to get sorted keys of amazing_grace in alphabetically ascending order
-    s = ";".join(p)
+    s = ";".join(k)
     s=s.split(";")
     amazing_grace=s.sort()
     return a, f, p, k
