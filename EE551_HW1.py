@@ -34,7 +34,8 @@ def lists():
     # Split variable n on a delimiter space into a list of substrings
     p = n.split()
     # Get all the items past the first of the third substring
-    r = p[1:]#i dont understand what is this question means
+    r = n.replace("awesome","wesome")
+    r = r.split()
     # Create a 3 x 3 matrix as nested list such that
     #   first row is [1, 4, 5]
     #   second row is [6, 10, 11]
@@ -66,24 +67,24 @@ def dictionaries():
     # Increase the quantity of f by 1
     # IMPLEMENT IT HERE
     a["quantity"]=5
-    p=a["quantity"]
+    
     # Create a nested dictionary where:
     #   name => {first_name => "Grace", last_name => "Hopper"} (a dictionary)
     #   jobs => ["scientist", "engineer"] (a list)
     #   age => 85
-    k = {"name":{"first_name":"Grace","last_name":"Hopper"},"jobs":{"scientist","engineer"},"age":"85"}
+    p = {"name":{"first_name":"Grace","last_name":"Hopper"},"jobs":{"scientist","engineer"},"age":"85"}
     # Add "programmer" to the list of jobs Grace has
     # IMPLEMENT IT HERE
-    k["jobs"]={"programmer","scientist","engineer"}
+    p["jobs"]={"programmer","scientist","engineer"}
     # Get the third job Grace has that you recently added
-    s=k["jobs"]
-    s = ";".join(k["jobs"])
+    s=p["jobs"]
+    s = ";".join(p["jobs"])
     s=s.split(";")
     s[1]
     # Use the sort() function to get sorted keys of amazing_grace in alphabetically ascending order
-    s = ";".join(k)
+    s = ";".join(p)
     s=s.split(";")
-    amazing_grace=s.sort()
+    k=s.sort()
     return a, f, p, k
 
 numbers_and_strings()
